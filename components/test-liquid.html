@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiquidEther Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a0f;
+            font-family: Arial, sans-serif;
+        }
+        #liquidBackground {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .status {
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="LiquidEther.css">
+</head>
+<body>
+    <!-- Liquid Ether Background -->
+    <div id="liquidBackground"></div>
+    
+    <div class="content">
+        <h1>LiquidEther Background Test</h1>
+        <div class="status" id="status">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- React, ReactDOM, and Three.js from CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    
+    <!-- Babel Standalone for JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Status checker -->
+    <script>
+        window.addEventListener('load', function() {
+            const status = document.getElementById('status');
+            
+            // Check if libraries loaded
+            const checks = [];
+            if (typeof React !== 'undefined') checks.push('✅ React loaded');
+            else checks.push('❌ React not loaded');
+            
+            if (typeof ReactDOM !== 'undefined') checks.push('✅ ReactDOM loaded');
+            else checks.push('❌ ReactDOM not loaded');
+            
+            if (typeof THREE !== 'undefined') checks.push('✅ Three.js loaded');
+            else checks.push('❌ Three.js not loaded');
+            
+            if (typeof Babel !== 'undefined') checks.push('✅ Babel loaded');
+            else checks.push('❌ Babel not loaded');
+            
+            status.innerHTML = '<p>' + checks.join('</p><p>') + '</p>';
+        });
+    </script>
+    
+    <!-- LiquidEther Component -->
+    <script type="text/babel" src="liquid-background.js"></script>
+</body>
+</html>

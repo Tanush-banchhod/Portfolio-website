@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-tanush-banchhod",
+  "version": "1.0.0",
+  "description": "Personal portfolio website showcasing AI & Automation Engineering projects",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "ai",
+    "automation",
+    "python",
+    "web-development",
+    "three.js",
+    "react"
+  ],
+  "author": "Tanush Banchhod <tanushbanchhod@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tanush-banchhod/portfolio.git"
+  },
+  "homepage": "https://github.com/Tanush-banchhod/portfolio#readme"
+}

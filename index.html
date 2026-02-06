@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer | AI & Automation</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/LiquidEther.css">
+    <link rel="stylesheet" href="assets/css/ProfileCard.css">
+</head>
+<body>
+    <!-- Liquid Ether Background -->
+    <div id="liquidBackground" style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 1;"></div>
+    
+    <!-- Glassmorphism Navigation -->
+    <nav class="nav-glass" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">TANUSH BANCHHOD</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>  
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-layout">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span class="status-dot"></span>
+                    Available for Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Software Engineer
+                    <span class="gradient-text">AI & Automation Engineer</span>
+                </h1>
+                <div class="terminal-wrapper">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">tech_stack.py</span>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="terminal-prompt">$ </span>
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Building Python-powered automation pipelines and AI systems that reduce execution time by 75%, 
+                    optimize workflows, and scale across distributed cloud environments.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">
+                        View My Work
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            
+            <!-- Profile Card Container -->
+            <div id="profileCardContainer" class="profile-card-container"></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// About Me</span>
+                <h2 class="section-title reveal-up">Experience & Journey</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <p class="about-lead">
+                        Passionate about building high-performance automation systems and AI pipelines 
+                        that solve complex engineering challenges at scale. Specialized in Python development, 
+                        cloud infrastructure, and DevOps practices.
+                    </p>
+                    <p class="about-body">
+                        Graduate from NMIMS with B.Tech (Hons.) in Computer Engineering, specializing in 
+                        IoT, Cloud Computing, and Blockchain. Currently working remotely as a Python Engineer, 
+                        building distributed systems, LLM evaluation pipelines, and tools that support 
+                        40–80 engineers daily. My expertise spans backend automation, cloud infrastructure (AWS, GCP), 
+                        and creating developer-focused tooling that improves velocity and reliability.
+                    </p>
+                </div>
+                
+                <div class="timeline reveal-right">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Nov 2024 - Present</div>
+                            <h3 class="timeline-title">Python Engineer</h3>
+                            <p class="timeline-company">Turing (Remote)</p>
+                            <p class="timeline-desc">Built Python automation systems reducing execution time by 75% with multi-process pipelines (16 parallel workloads). Engineered data validation frameworks cutting rework from 60% to under 10%. Created LLM-assisted review pipelines saving 12–20 engineer-hours daily. Led tooling support for 40–80 engineers across cloud environments (AWS EC2, GCP, Docker).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Dec 2023 - May 2024</div>
+                            <h3 class="timeline-title">DevOps Intern</h3>
+                            <p class="timeline-company">Hackveda (Remote)</p>
+                            <p class="timeline-desc">Built and deployed cloud-based applications using Docker, Jenkins, AWS, and Kubernetes. Configured CI/CD pipelines with automated vulnerability scans and secure SSH authentication. Gained hands-on experience with AWS EC2 provisioning, container orchestration, and Linux scripting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Tech Stack</span>
+                <h2 class="section-title reveal-up">Skills & Technologies</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Python -->
+                <div class="skill-card reveal-up" style="animation-delay: 0.1s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L6 14V34L24 44L42 34V14L24 4Z" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="24" cy="24" r="4" fill="url(#gradient1)"/>
+                            <line x1="24" y1="4" x2="24" y2="20" stroke="url(#gradient1)" stroke-width="2"/>
+                            <line x1="24" y1="28" x2="24" y2="44" stroke="url(#gradient1)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="6" y1="4" x2="42" y2="44">
+                                    <stop offset="0%" stop-color="#6366f1"/>
+                                    <stop offset="100%" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <p class="skill-desc">Primary Language</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.15s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="4" stroke="url(#gradient2)" stroke-width="2"/>
+                            <path d="M16 24L22 30L32 18" stroke="url(#gradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="8" y1="8" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#10b981"/>
+                                    <stop offset="100%" stop-color="#14b8a6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">C++</h3>
+                    <p class="skill-desc">Systems Programming</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.2s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8L10 18V30L24 40L38 30V18L24 8Z" stroke="url(#gradient6)" stroke-width="2"/>
+                            <path d="M24 8V24M24 24L10 18M24 24L38 18" stroke="url(#gradient6)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradient6" x1="10" y1="8" x2="38" y2="40">
+                                    <stop offset="0%" stop-color="#8b5cf6"/>
+                                    <stop offset="100%" stop-color="#ec4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">FastAPI</h3>
+                    <p class="skill-desc">API Development</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.25s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="16" stroke="url(#gradient4)" stroke-width="2"/>
+                            <path d="M24 8V24L32 32" stroke="url(#gradient4)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradient4" x1="8" y1="8" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#f59e0b"/>
+                                    <stop offset="100%" stop-color="#ef4444"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Streamlit</h3>
+                    <p class="skill-desc">Web Apps</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.3s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 12H40M8 24H40M8 36H40" stroke="url(#gradient5)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="14" cy="12" r="2" fill="url(#gradient5)"/>
+                            <circle cx="14" cy="24" r="2" fill="url(#gradient5)"/>
+                            <circle cx="14" cy="36" r="2" fill="url(#gradient5)"/>
+                            <defs>
+                                <linearGradient id="gradient5" x1="8" y1="12" x2="40" y2="36">
+                                    <stop offset="0%" stop-color="#06b6d4"/>
+                                    <stop offset="100%" stop-color="#3b82f6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Pandas</h3>
+                    <p class="skill-desc">Data Analysis</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.35s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="16" width="32" height="20" rx="2" stroke="url(#gradient9)" stroke-width="2"/>
+                            <path d="M16 16V12C16 10.9 16.9 10 18 10H30C31.1 10 32 10.9 32 12V16" stroke="url(#gradient9)" stroke-width="2"/>
+                            <circle cx="24" cy="26" r="3" fill="url(#gradient9)"/>
+                            <defs>
+                                <linearGradient id="gradient9" x1="8" y1="10" x2="40" y2="36">
+                                    <stop offset="0%" stop-color="#f97316"/>
+                                    <stop offset="100%" stop-color="#ea580c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Docker</h3>
+                    <p class="skill-desc">Containers</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.4s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M12 16L24 8L36 16V32L24 40L12 32V16Z" stroke="url(#gradient3)" stroke-width="2"/>
+                            <path d="M12 16L24 24M24 24L36 16M24 24V40" stroke="url(#gradient3)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradient3" x1="12" y1="8" x2="36" y2="40">
+                                    <stop offset="0%" stop-color="#6366f1"/>
+                                    <stop offset="100%" stop-color="#a855f7"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">AWS</h3>
+                    <p class="skill-desc">Cloud Services</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.45s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="10" y="10" width="28" height="28" rx="2" stroke="url(#gradient7)" stroke-width="2"/>
+                            <path d="M18 24L22 28L30 20" stroke="url(#gradient7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient7" x1="10" y1="10" x2="38" y2="38">
+                                    <stop offset="0%" stop-color="#10b981"/>
+                                    <stop offset="100%" stop-color="#059669"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Kubernetes</h3>
+                    <p class="skill-desc">Orchestration</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.5s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="16" r="4" stroke="url(#gradient8)" stroke-width="2"/>
+                            <circle cx="16" cy="32" r="4" stroke="url(#gradient8)" stroke-width="2"/>
+                            <circle cx="32" cy="32" r="4" stroke="url(#gradient8)" stroke-width="2"/>
+                            <path d="M24 20L24 28M20 30L16 32M28 30L32 32" stroke="url(#gradient8)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradient8" x1="16" y1="12" x2="32" y2="36">
+                                    <stop offset="0%" stop-color="#f59e0b"/>
+                                    <stop offset="100%" stop-color="#d97706"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Jenkins</h3>
+                    <p class="skill-desc">CI/CD</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.55s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="24" rx="2" stroke="url(#gradient10)" stroke-width="2"/>
+                            <path d="M14 20L18 24L14 28M22 28H28" stroke="url(#gradient10)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient10" x1="8" y1="12" x2="40" y2="36">
+                                    <stop offset="0%" stop-color="#64748b"/>
+                                    <stop offset="100%" stop-color="#475569"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Linux</h3>
+                    <p class="skill-desc">System Admin</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.6s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="12" y="8" width="24" height="32" rx="2" stroke="url(#gradient11)" stroke-width="2"/>
+                            <line x1="18" y1="16" x2="30" y2="16" stroke="url(#gradient11)" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="18" y1="22" x2="26" y2="22" stroke="url(#gradient11)" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="18" y1="28" x2="28" y2="28" stroke="url(#gradient11)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="gradient11" x1="12" y1="8" x2="36" y2="40">
+                                    <stop offset="0%" stop-color="#3b82f6"/>
+                                    <stop offset="100%" stop-color="#2563eb"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Git</h3>
+                    <p class="skill-desc">Version Control</p>
+                </div>
+                
+                <div class="skill-card reveal-up" style="animation-delay: 0.65s">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="12" cy="24" r="4" stroke="url(#gradient12)" stroke-width="2"/>
+                            <circle cx="36" cy="24" r="4" stroke="url(#gradient12)" stroke-width="2"/>
+                            <circle cx="24" cy="12" r="4" stroke="url(#gradient12)" stroke-width="2"/>
+                            <circle cx="24" cy="36" r="4" stroke="url(#gradient12)" stroke-width="2"/>
+                            <path d="M15 22L21 14M27 14L33 22M33 26L27 34M21 34L15 26" stroke="url(#gradient12)" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="gradient12" x1="12" y1="12" x2="36" y2="36">
+                                    <stop offset="0%" stop-color="#a855f7"/>
+                                    <stop offset="100%" stop-color="#9333ea"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">MySQL</h3>
+                    <p class="skill-desc">Database</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Bento Grid -->
+    <section id="projects" class="projects-section">
+        <div class="container-wide">
+            <div class="section-header">
+                <span class="section-tag">// Portfolio</span>
+                <h2 class="section-title reveal-up">Featured Projects</h2>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Large Featured Project -->
+                <div class="bento-item bento-large reveal-up" style="animation-delay: 0.1s">
+                    <div class="project-card featured">
+                        <div class="project-tag">Automation</div>
+                        <h3 class="project-title">Multi-Process Evaluation Pipeline</h3>
+                        <p class="project-desc">
+                            Built Python automation system with 16 parallel workloads reducing execution time by 75%. 
+                            Includes data validation frameworks, LLM-assisted review pipelines, and cloud-based execution 
+                            environments (AWS EC2, GCP VMs). Supports 40-80 engineers with automated tooling and monitoring.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Multiprocessing</span>
+                            <span class="tech-tag">AWS EC2</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3C6.134 3 3 6.134 3 10c0 3.093 2.002 5.713 4.773 6.646.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.948.424-2.358-.94-2.358-.94-.318-.808-.776-1.023-.776-1.023-.635-.434.048-.425.048-.425.702.05 1.071.721 1.071.721.624 1.07 1.638.761 2.037.582.063-.453.244-.761.444-.936-1.554-.177-3.188-.777-3.188-3.457 0-.764.273-1.388.721-1.877-.072-.177-.312-.888.069-1.85 0 0 .588-.188 1.925.718A6.68 6.68 0 0110 7.8c.595.003 1.194.08 1.753.236 1.336-.906 1.923-.718 1.923-.718.382.962.142 1.673.07 1.85.449.489.72 1.113.72 1.877 0 2.687-1.636 3.278-3.194 3.451.251.216.475.643.475 1.296 0 .936-.009 1.69-.009 1.92 0 .187.127.404.481.336A7.012 7.012 0 0017 10c0-3.866-3.134-7-7-7z" fill="currentColor"/>
+                                </svg>
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Medium Project -->
+                <div class="bento-item bento-medium reveal-up" style="animation-delay: 0.2s">
+                    <div class="project-card">
+                        <div class="project-tag">DevOps</div>
+                        <h3 class="project-title">CI/CD Pipeline with Security Scanning</h3>
+                        <p class="project-desc">
+                            Built automated deployment pipeline using Jenkins, Docker, and AWS. 
+                            Configured vulnerability scans and SSH authentication for secure deployments.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">AWS EC2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3C6.134 3 3 6.134 3 10c0 3.093 2.002 5.713 4.773 6.646.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.948.424-2.358-.94-2.358-.94-.318-.808-.776-1.023-.776-1.023-.635-.434.048-.425.048-.425.702.05 1.071.721 1.071.721.624 1.07 1.638.761 2.037.582.063-.453.244-.761.444-.936-1.554-.177-3.188-.777-3.188-3.457 0-.764.273-1.388.721-1.877-.072-.177-.312-.888.069-1.85 0 0 .588-.188 1.925.718A6.68 6.68 0 0110 7.8c.595.003 1.194.08 1.753.236 1.336-.906 1.923-.718 1.923-.718.382.962.142 1.673.07 1.85.449.489.72 1.113.72 1.877 0 2.687-1.636 3.278-3.194 3.451.251.216.475.643.475 1.296 0 .936-.009 1.69-.009 1.92 0 .187.127.404.481.336A7.012 7.012 0 0017 10c0-3.866-3.134-7-7-7z" fill="currentColor"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Small Project -->
+                <div class="bento-item bento-small reveal-up" style="animation-delay: 0.25s">
+                    <div class="project-card">
+                        <div class="project-tag">Backend</div>
+                        <h3 class="project-title">FastAPI Service</h3>
+                        <p class="project-desc">
+                            RESTful API with Pydantic validation and async operations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">AsyncIO</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Medium Project -->
+                <div class="bento-item bento-medium reveal-up" style="animation-delay: 0.3s">
+                    <div class="project-card">
+                        <div class="project-tag">Data Analysis</div>
+                        <h3 class="project-title">Data Validation Framework</h3>
+                        <p class="project-desc">
+                            Automated data verification system that reduced rework from 60% to under 10%. 
+                            Normalizes folder structures and validates outputs across distributed systems.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">PyTest</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3C6.134 3 3 6.134 3 10c0 3.093 2.002 5.713 4.773 6.646.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.948.424-2.358-.94-2.358-.94-.318-.808-.776-1.023-.776-1.023-.635-.434.048-.425.048-.425.702.05 1.071.721 1.071.721.624 1.07 1.638.761 2.037.582.063-.453.244-.761.444-.936-1.554-.177-3.188-.777-3.188-3.457 0-.764.273-1.388.721-1.877-.072-.177-.312-.888.069-1.85 0 0 .588-.188 1.925.718A6.68 6.68 0 0110 7.8c.595.003 1.194.08 1.753.236 1.336-.906 1.923-.718 1.923-.718.382.962.142 1.673.07 1.85.449.489.72 1.113.72 1.877 0 2.687-1.636 3.278-3.194 3.451.251.216.475.643.475 1.296 0 .936-.009 1.69-.009 1.92 0 .187.127.404.481.336A7.012 7.012 0 0017 10c0-3.866-3.134-7-7-7z" fill="currentColor"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Small Project -->
+                <div class="bento-item bento-small reveal-up" style="animation-delay: 0.35s">
+                    <div class="project-card">
+                        <div class="project-tag">Web App</div>
+                        <h3 class="project-title">Streamlit Dashboard</h3>
+                        <p class="project-desc">
+                            Interactive data visualization dashboard with real-time updates.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Get in Touch</span>
+                <h2 class="section-title reveal-up">Let's Build Something Amazing</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <p class="contact-lead">
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you have a question or just want to say hi, feel free to reach out.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:tanushbanchhod@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8L10.89 13.26C11.55 13.67 12.45 13.67 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">tanushbanchhod@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+919131575912" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 16.92V19.92C22 20.5096 21.7663 21.0759 21.3504 21.4963C20.9345 21.9167 20.3703 22.1584 19.78 22.17C16.4397 22.5 13.0197 21.5883 10.0197 19.59C7.21963 17.77 4.88963 15.4399 3.07963 12.6399C1.07963 9.61015 0.169634 6.19047 0.499634 2.82047C0.509634 2.23011 0.751634 1.6665 1.17163 1.25042C1.59163 0.834338 2.15963 0.600586 2.74963 0.600586H5.74963C6.61963 0.600586 7.33963 1.25058 7.44963 2.11058C7.56963 2.96058 7.78963 3.80058 8.09963 4.60058C8.34963 5.22058 8.19963 5.9406 7.67963 6.4606L6.39963 7.7406C8.06963 10.6406 10.3896 12.9606 13.2896 14.6306L14.5696 13.3506C15.0896 12.8306 15.8096 12.6806 16.4296 12.9306C17.2296 13.2406 18.0696 13.4606 18.9196 13.5806C19.7896 13.6906 20.4396 14.4206 20.4396 15.2906V18.2906C20.4396 18.5806 20.3796 18.8706 20.2596 19.1406C20.1396 19.4106 19.9596 19.6606 19.7296 19.8706C19.4996 20.0806 19.2296 20.2506 18.9296 20.3706C18.6296 20.4906 18.3196 20.5606 17.9996 20.5606H16.9296C16.4896 20.5606 16.0496 20.5006 15.6296 20.3806" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91-9131575912</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/tanush-banchhod" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">/in/tanush-banchhod</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/Tanush-banchhod" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 1C19.91 1 18.73 0.65 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.65 5.09 1 5.09 1C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">/tanushbanchhod</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-full">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <span class="gradient-text">Tanush Banchhod</span>
+                </p>
+                <p class="footer-copyright">
+                    © 2026 All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- React, ReactDOM, and Three.js from CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    
+    <!-- LiquidEther Component (No Babel needed - plain JavaScript) -->
+    <script src="assets/js/liquid-background.js"></script>
+    
+    <!-- ProfileCard Component -->
+    <script src="assets/js/ProfileCard.js"></script>
+    <script>
+        // Mount ProfileCard after DOM is ready
+        window.addEventListener('load', function() {
+            if (typeof React === 'undefined' || typeof ReactDOM === 'undefined' || typeof ProfileCard === 'undefined') {
+                console.error('Required libraries not loaded for ProfileCard');
+                return;
+            }
+            
+            const profileCardContainer = document.getElementById('profileCardContainer');
+            if (profileCardContainer) {
+                const root = ReactDOM.createRoot(profileCardContainer);
+                root.render(
+                    React.createElement(ProfileCard, {
+                        name: "Tanush Banchhod",
+                        title: "AI & Automation Engineer",
+                        handle: "tanush-banchhod",
+                        status: "Available for Opportunities",
+                        contactText: "Contact Me",
+                        avatarUrl: "assets/images/IMG_2683.jpg",
+                        showUserInfo: true,
+                        enableTilt: true,
+                        enableMobileTilt: false,
+                        behindGlowEnabled: true,
+                        behindGlowColor: "rgba(99, 102, 241, 0.67)",
+                        innerGradient: "linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)",
+                        onContactClick: function() {
+                            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    })
+                );
+            }
+        });
+    </script>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
