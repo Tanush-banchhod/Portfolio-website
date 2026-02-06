@@ -31,6 +31,9 @@ build/
 .env.test.local
 .env.production.local
 
+# Credentials (Keep your EmailJS credentials private!)
+assets/js/emailjs-config.js
+
 # Logs
 logs
 *.log

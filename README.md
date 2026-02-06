@@ -26,6 +26,9 @@ A modern, interactive portfolio website showcasing my work as an AI & Automation
 Portfolio/
 ├── index.html              # Main HTML file
 ├── README.md              # Project documentation
+├── EMAILJS_SETUP.md       # EmailJS configuration guide
+├── LICENSE                # MIT License
+├── package.json           # Project metadata
 ├── .gitignore             # Git ignore rules
 ├── assets/
 │   ├── css/               # Stylesheets
@@ -35,7 +38,8 @@ Portfolio/
 │   ├── js/                # JavaScript files
 │   │   ├── script.js      # Main application logic
 │   │   ├── liquid-background.js
-│   │   └── ProfileCard.js
+│   │   ├── ProfileCard.js
+│   │   └── emailjs-config.js  # EmailJS configuration
 │   └── images/            # Image assets
 │       └── IMG_2683.jpg   # Profile photo
 └── components/            # Test/additional components
@@ -97,6 +101,32 @@ Replace `assets/images/IMG_2683.jpg` with your photo, or update the path in `ind
 ```javascript
 avatarUrl: "assets/images/your-photo.jpg",
 ```
+
+### 📧 Setting Up EmailJS (Contact Form)
+
+The contact form is integrated with EmailJS for seamless email delivery. To set it up:
+
+1. **Create free EmailJS account**: [dashboard.emailjs.com](https://dashboard.emailjs.com/sign-up)
+2. **Follow the detailed guide**: See `EMAILJS_SETUP.md` for step-by-step instructions
+3. **Create your config file**:
+   ```bash
+   cp assets/js/emailjs-config.template.js assets/js/emailjs-config.js
+   ```
+4. **Update credentials**: Edit `assets/js/emailjs-config.js` with your keys:
+   ```javascript
+   const EMAILJS_CONFIG = {
+       PUBLIC_KEY: 'your_public_key',
+       SERVICE_ID: 'your_service_id',
+       TEMPLATE_ID: 'your_template_id'
+   };
+   ```
+
+**Features:**
+- ✅ Real-time email delivery
+- ✅ Loading states and animations
+- ✅ Success/error feedback
+- ✅ Spam protection
+- ✅ 200 free emails/month
 
 ## 🎯 Performance
 
